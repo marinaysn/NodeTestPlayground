@@ -1,0 +1,2 @@
+on command line navigate to the right directly where project is located and run
+npm run test-watch
