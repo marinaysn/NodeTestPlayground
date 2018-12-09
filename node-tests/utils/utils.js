@@ -65,7 +65,7 @@ module.exports.getMiddle = s => {
   strText = s.split(/(?!$)/u);
   let newArray = "";
 
-  //test
+  //testing
   let mid = Math.floor(strText.length / 2);
   if (strText.length === 1) {
     return s;
