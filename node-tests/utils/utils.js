@@ -58,8 +58,7 @@ module.exports.RemoveVowels = strText => {
         strText[i] === "A" ||
         strText[i] === "E" ||
         strText[i] === "I" ||
-        strText[i] === "O" ||
-        strText[i] === "U"
+        strText[i] === "O" || strText[i] === "U"
       )
     ) {
       newArray = newArray + strText[i];
@@ -71,6 +70,7 @@ module.exports.RemoveVowels = strText => {
 module.exports.getMiddle = s => {
   strText = s.split(/(?!$)/u);
   let newArray = "";
+
   let mid = Math.floor(strText.length / 2);
   if (strText.length === 1) {
     return s;
