@@ -49,11 +49,8 @@ module.exports.RemoveVowels = strText => {
 
   for (let i = 0; i < strText.length; i++) {
     if (
-      !(
-        strText[i] === "a" ||
-        strText[i] === "e" ||
-        strText[i] === "i" ||
-        strText[i] === "o" ||
+      !(strText[i] === "a" || strText[i] === "e" ||
+        strText[i] === "i" || strText[i] === "o" ||
         strText[i] === "u" ||
         strText[i] === "A" ||
         strText[i] === "E" ||
@@ -73,6 +70,7 @@ module.exports.getMiddle = s => {
   let newArray = "";
   let mid = Math.floor(strText.length / 2);
   if (strText.length === 1) {
+
     return s;
   } else if (strText.length % 2 === 0) {
     return strText[mid - 1] + strText[mid];
