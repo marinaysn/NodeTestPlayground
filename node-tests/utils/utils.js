@@ -48,9 +48,7 @@ module.exports.RemoveVowels = strText => {
   strText = strText.split(/(?!$)/u);
 
   for (let i = 0; i < strText.length; i++) {
-    if (
-      !(
-        strText[i] === "a" ||
+    if (!(strText[i] === "a" ||
         strText[i] === "e" || strText[i] === "i" || strText[i] === "o" ||
         strText[i] === "u" || strText[i] === "A" || strText[i] === "E" ||
         strText[i] === "I" || strText[i] === "O" || strText[i] === "U"
