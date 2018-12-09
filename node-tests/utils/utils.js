@@ -76,7 +76,8 @@ module.exports.getMiddle = s => {
     return s;
   } else if (strText.length % 2 === 0) {
     return strText[mid - 1] + strText[mid];
-  } else {
+  } else
+  {
     return strText[mid];
   }
 };
