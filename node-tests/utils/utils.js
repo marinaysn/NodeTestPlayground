@@ -51,14 +51,9 @@ module.exports.RemoveVowels = strText => {
     if (
       !(
         strText[i] === "a" ||
-        strText[i] === "e" ||
-        strText[i] === "i" ||
-        strText[i] === "o" ||
-        strText[i] === "u" ||
-        strText[i] === "A" ||
-        strText[i] === "E" ||
-        strText[i] === "I" ||
-        strText[i] === "O" || strText[i] === "U"
+        strText[i] === "e" || strText[i] === "i" || strText[i] === "o" ||
+        strText[i] === "u" || strText[i] === "A" || strText[i] === "E" ||
+        strText[i] === "I" || strText[i] === "O" || strText[i] === "U"
       )
     ) {
       newArray = newArray + strText[i];
