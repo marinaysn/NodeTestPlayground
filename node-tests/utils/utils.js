@@ -57,6 +57,7 @@ module.exports.RemoveVowels = strText => {
       newArray = newArray + strText[i];
     }
   }
+  
   return newArray;
 };
 
