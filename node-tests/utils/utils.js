@@ -66,7 +66,7 @@ module.exports.RemoveVowels = strText => {
 };
 
 module.exports.getMiddle = s => {
-  strText = s.split(/(?!$)/u);
+  let strText = s.split(/(?!$)/u);
   let newArray = "";
   let mid = Math.floor(strText.length / 2);
   if (strText.length === 1) {
@@ -98,4 +98,18 @@ if (results.length > 0){
   results.sort();
 }
   return results;
+}
+
+
+module.exports.getCount = (str) => {
+  var vowelsCount = 0;
+  let strText = str.toLowerCase().split(/(?!$)/u);
+ 
+  for (let i=0; i< strText.length; i++) {
+    if (strText[i] === "a" || strText[i] === "i" || strText[i] ===  "e" || strText[i] === "o" || strText[i] === "u") 
+    {
+      vowelsCount++;
+    }
+  }  
+  return vowelsCount;
 }

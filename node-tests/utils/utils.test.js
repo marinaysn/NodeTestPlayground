@@ -111,3 +111,17 @@ it("Return a sorted array r in lexicographical order of the strings of a1 which 
  // expect(p).toInclude('arp', 'live', 'strong', `Expected to include "arp", "live", "strong" but got ${p}`);
   expect(p).toEqual("", `Expected to be  empty but got: ${p}`);
 });
+
+
+
+
+// -- Test 9 --
+// Return the number (count) of vowels in the given string.
+// We will consider a, e, i, o, and u as vowels for this Kata.
+// The input string will only consist of lower case letters and/or spaces.
+
+it("Returns the number of vowels in the given string", () => {
+  let p = u_utils.getCount("testing it now");
+
+  expect(p).toBe(4, `Expected 4 but got ${p}`);
+});
