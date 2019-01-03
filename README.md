@@ -1,2 +1,2 @@
-This repo is for testing and practiing purposes.
+This repo is for testing and practicing purposes.
 ### @marinaysn
